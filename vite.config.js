@@ -6,5 +6,6 @@ export default defineConfig({
   plugins: [vue()],
   build: {
     outDir: 'docs',
+    base: process.env.NODE_ENV === "production" ? "/kim-dq/" : "/",
   },
 })
